@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Personal portfolio of Areeb Ahmad - WordPress Developer specializing in modern, responsive, and high-performance websites.">
+  <title>Areeb Ahmad | WordPress Developer</title>
+
+  <!-- Google Fonts Preconnect and Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Sticky Top Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-link" id="brand-link" aria-label="Portfolio Home">
+        <div class="brand-avatar" id="nav-avatar">
+          <span class="brand-monogram">AA</span>
+        </div>
+        <span class="brand-text" id="nav-name">Areeb Ahmad</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu"
+        aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Structure -->
+  <main id="main-content">
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section" aria-label="Introduction">
+      <div class="container hero-container">
+        <!-- Circular Profile Photo with Animated Glow Ring -->
+        <div class="hero-photo-wrapper reveal">
+          <div class="photo-glow-ring" aria-hidden="true"></div>
+          <div class="photo-frame" id="hero-photo-frame">
+            <img src="assets/portfolio.jpg" alt="Areeb Ahmad" class="profile-img" id="hero-profile-img" fetchpriority="high">
+          </div>
+        </div>
+
+        <!-- Hero Content / Introduction -->
+        <div class="hero-content reveal">
+          <div class="hero-location-pill" id="hero-location-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span id="hero-location-text"></span>
+          </div>
+
+          <h1 class="hero-name" id="hero-name"></h1>
+
+          <div class="hero-role-line">
+            <span class="role-intro">I'm a </span>
+            <span class="role-typing" id="hero-role"></span>
+            <span class="typing-cursor" aria-hidden="true"></span>
+          </div>
+
+          <p class="hero-tagline" id="hero-tagline"></p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary" id="btn-hero-contact">Contact Me</a>
+            <a href="#experience" class="btn btn-secondary" id="btn-hero-experience">View Experience</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section id="about" class="about-section section-padding" aria-label="About Me">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">Overview</span>
+          <h2 class="section-title" id="about-title"></h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-layout">
+          <!-- Ordered 4 Paragraphs from content.js -->
+          <div class="about-narrative" id="about-paragraphs">
+            <!-- Paragraphs populated dynamically via script.js -->
+          </div>
+
+          <!-- Skills Pill-shaped Tags Container -->
+          <div class="about-skills-wrapper reveal">
+            <div class="skills-card">
+              <h3 class="skills-heading">Skills & Specializations</h3>
+              <p class="skills-description">Core technical proficiencies and web development technologies:</p>
+              <div class="skills-pills-list" id="skills-list">
+                <!-- Skill pill badges populated dynamically via script.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Experience Section -->
+    <section id="experience" class="experience-section section-padding" aria-label="Experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">Career Journey</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="timeline-wrapper">
+          <div class="timeline-line-track" aria-hidden="true">
+            <div class="timeline-line-fill" id="timeline-line-fill"></div>
+          </div>
+
+          <div class="timeline-items" id="experience-timeline">
+            <!-- Experience cards populated dynamically via script.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Contact Section -->
+    <section id="contact" class="contact-section section-padding" aria-label="Contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-label">Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line" aria-hidden="true"></div>
+          <p class="section-intro">Have a project, freelance opportunity, or question? Feel free to reach out directly.
+          </p>
+        </div>
+
+        <!-- Contact Cards Container (Phone and Email) -->
+        <div class="contact-grid" id="contact-container">
+          <!-- Dynamic phone and email cards with inline SVGs injected via script.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 5. Footer -->
+  <footer class="footer" id="footer">
+    <div class="container footer-container">
+      <div class="footer-meta">
+        <p class="footer-name" id="footer-name"></p>
+        <p class="footer-tagline">Modern, high-performance web development.</p>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; <span id="footer-year"></span> <span id="footer-copyright-name"></span>. All rights reserved.</p>
+      </div>
+      <div class="footer-action">
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top of page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6" />
+          </svg>
+          <span>Top</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Files in Order: Data Configuration First, then App Logic -->
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
